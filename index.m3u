@@ -21,6 +21,22 @@ http://stream.tvcdn.net/ulusal/star-tv.m3u8
 http://stream.tvcdn.net/ulusal/360-tv.m3u8
 #EXTINF:-1 tvg-id="TV100.tr" tvg-logo="http://assets.tvcdn.net/d7741078-ccce-47d8-ba1c-a041b659bad6.png" group-title="Ulusal",TV 100
 http://stream.tvcdn.net/ulusal/tv-100.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/917ae8e7-cebb-4647-9fe7-8e9529088d73.png" group-title="KRAL",Tivi Turk
+http://stream.tvcdn.net/diger-eglence/tivi-turk.m3u8
+#EXTINF:-1 group-title="KRAL",sinevizyon 1
+http://162.212.179.32/gin-trn09/gt-sinevizyon-1/playlist.m3u8
+#EXTINF:-1 group-title="KRAL",sinevizyon 2
+http://162.212.179.32/gin-trn09/gt-sinevizyon-2/playlist.m3u8
+#EXTINF:-1 group-title="KRAL",sinevizyon 3
+http://162.212.179.32/gin-trn09/gt-sinevizyon-3/playlist.m3u8
+
+
+
+
+
+
+
+
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/ska5t9e.jpg" group-title="Kral",BEIN SPORTS 8K FEED |D CANLI
 https://tinyurl.com/DeaTHLesS-Opsun-Sizi?v=aHR0cHM6Ly93d3cub2hhLnRvL29oYS10di9wbGF5LzIxMTM0NjIzOTg0M2RkZWRlOGZhYmM=
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/ska5t9e.jpg" group-title="Kral",BEIN SPORTS 1 50 FPS |D CANLI
