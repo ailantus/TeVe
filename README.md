@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/ailantus/iptv/master/index.m3u
+https://raw.githubusercontent.com/ailantus/TeVe/master/index.m3u
