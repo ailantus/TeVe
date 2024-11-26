@@ -6,8 +6,7 @@ https://demiroren-live.daioncdn.net/kanald/kanald.m3u8
 #EXTINF:-1 tvg-id="NOWTV.tr" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="",NOW TV
 https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1732668240&st=7KK_mveWZ8NOQWqcb4H34Q
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-logo="https://i.imgur.com/1l7SCCu.png" group-title="",Show TV
-https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1&ppid=23dfc93626a064c7f2f3097093b860e5&dfp_paln=AQzzBGQEGFjgpYWYJ_EII6_st4-ujH8tnGrHEJ-bESTbVfmUY-jnp1NREKuG_E8ZNXdBrfQthBo0_s4C38E7sQuIEf3TIJjIo7xM1wdgraqWmiiLjyIpApO3hYswxxwj9YhTR67jIrZrlXNmZYbhgoWOr5EJ_doVHfl9gNYd2wFdSH3tmEJAF_xcOhghdSqAAT2yWoOuo-zzgtzpK2UjWigJXckhuxas5BGPKQuga8C79PRvhb4joojqszVfWeaGveEAKpymgcg0C0IAeSXp8ZI77q7xVzrF9ciHlKyDDE0Bk904hQXOcHHTpwONlDZF43VSwAjunhh_qmuA9mtDX5KybNQ54D3bVSXNfNDe7YNBRYFEsRDUeLtx7u8_qty7VbO5-45Uff5ZEH4MRjUITiccMTR6BjM454qZuh0jrSMbv5C5XWxTIcMsVUNjRr-L_qogrkSIENfP6dSwyIcY7agzX7XdsO7y5S72F4cfhvxCFupiJxoBU-nrRTAzeAzIYgV8I-LfYeLG4cz5UGEEI3pILwQ5kl7lYQhKgDYrUSztfRSnyE1g5-Q1SIvIzw-AXkvKpSCeAkCflIt1ubPl4bsWIZhQ-zyVeXsOwnGIX9njLaR__J_PJoX3-HXyNMbj3-KyXKeZMjhfpfZemC9XdSaHA_23smDbycKCRzcB0LyDYyCfaNLJQ8Pun-SgoHNHWS3UG703fNXxQuSjRLs0lP_u6Q5KrrUVGtKQxi_vmKr8BAi3XOCU7dal0dKSMauCtBh0etyLmoKeo35oyuHEpNlD1EyztiJ0ERbyKvB64XJsufS_7nBs4rN-H1jMHbxY1BLsz67ljgsUXJfaMsww7WN060fdrssDwBjTMWr1ZF2TVcnP9xGadnik5YLtYl55cwP0ilPToIrgHAB0DZGA0_tK_nyUuAcVkOoU8cQf-iYttWSoNE8b6f7y8J1ANqyt6nyLbT9U5ZrNxlGNvcHo6nQw9QfRHlLLG_3uZ4HYFCYlANImwlwIrvg0QlPHz5Dkm16hGWut4W4G0CaRu3iznS7LqIBxwStEtMC46w..
-
+https://ciner-live.daioncdn.net/showtv/showtv_360p.m3u8
 
 #EXTINF:-1 tvg-id="360.tr" tvg-logo="https://i.imgur.com/agn47sQ.png" group-title="News",360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
