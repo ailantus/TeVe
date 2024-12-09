@@ -7,7 +7,8 @@ https://demiroren-live.daioncdn.net/kanald/kanald.m3u8
 https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1732668240&st=7KK_mveWZ8NOQWqcb4H34Q
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-logo="https://i.imgur.com/1l7SCCu.png" group-title="",Show TV
 https://ciner-live.daioncdn.net/showtv/showtv.m3u8
-
+#EXTINF:-1,STAR TV
+https://dogus-live.daioncdn.net/startv/startv.m3u8?hash=5ae293496598521fa5a8758da166dfd4
 #EXTINF:-1 tvg-id="360.tr" tvg-logo="https://i.imgur.com/agn47sQ.png" group-title="News",360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1 tvg-id="HaberturkTV.tr" tvg-logo="https://i.imgur.com/6Tw3rUp.png" group-title="News",Haberturk TV
