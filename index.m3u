@@ -3,8 +3,6 @@
 https://tv8-live.daioncdn.net/tv8/tv8.m3u8
 #EXTINF:-1 tvg-id="KanalD.tr" tvg-logo="https://i.imgur.com/9o1atM6.png" group-title="General",Kanal D
 https://demiroren-live.daioncdn.net/kanald/kanald.m3u8
-#EXTINF:-1 tvg-id="NOWTV.tr" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="General",NOW TV
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-logo="https://i.imgur.com/1l7SCCu.png" group-title="General",Show TV
 https://ciner-live.daioncdn.net/showtv/showtv.m3u8
 #EXTINF:-1,STAR TV
@@ -15,8 +13,6 @@ https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8
 #EXTINF:-1 tvg-id="HalkTV.tr" tvg-logo="https://i.imgur.com/xM0HA30.png" group-title="News",Halk TV
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
-#EXTINF:-1 tvg-id="IBBTV.tr" tvg-logo="https://i.imgur.com/aXxAz84.png" group-title="General",IBB TV
-http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-logo="https://i.imgur.com/0gq9xOm.png" group-title="Entertainment",Kanal 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 #EXTINF:-1 tvg-id="KanalDDrama.tr" tvg-logo="https://i.imgur.com/WIeZMKT.png" group-title="Entertainment",Kanal D Drama
@@ -27,7 +23,6 @@ https://demiroren-live.daioncdn.net/teve2/teve2.m3u8
 http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 #EXTINF:-1,DENİZ POSTASI
 https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/playlist.m3u8
-#EXTINF:-1,ÇİFTÇİ TV
-http://185.234.111.229:8000/play/a04i
 #EXTINF:-1,TiVi TURK
 https://stream.tiviturk.de/live/tiviturk.m3u8
+
