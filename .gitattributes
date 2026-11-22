@@ -1,0 +1,9 @@
+* text=auto
+*.m3u text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.yml text eol=lf
+*.md text eol=lf

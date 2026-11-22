@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Listesi — Türk Ulusal Kanallar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">▶</span>
+      <div>
+        <h1>TV Listesi</h1>
+        <p id="meta" class="meta">Kanallar yükleniyor…</p>
+      </div>
+    </div>
+    <button id="refresh" class="ghost" type="button" title="Listeyi yeniden indir">↻ Yenile</button>
+  </header>
+
+  <main>
+    <section class="player-card" aria-label="Canlı yayın">
+      <div class="player-frame">
+        <video id="video" controls playsinline autoplay></video>
+        <div id="placeholder" class="placeholder">
+          <span class="placeholder-icon" aria-hidden="true">▶</span>
+          <p>İzlemek için bir kanal seçin</p>
+          <small>Liste otomatik güncellenir · Yayın kalitesine göre en iyi kaynak seçilir</small>
+        </div>
+      </div>
+      <div class="player-bar">
+        <div class="now-playing">
+          <strong id="nowTitle">Kanal seçilmedi</strong>
+          <span id="nowStatus" class="status"></span>
+        </div>
+        <div class="player-actions">
+          <button id="alternate" class="ghost" type="button" disabled>Yedek kaynağı dene</button>
+          <button id="fullscreen" class="ghost" type="button">Tam ekran</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="list-section" aria-label="Kanal listesi">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Kanal ara…" autocomplete="off" aria-label="Kanal ara">
+        <label class="favorite-toggle">
+          <input id="favoritesOnly" type="checkbox">
+          <span>Sadece favoriler</span>
+        </label>
+      </div>
+      <div id="groups" class="groups" role="tablist" aria-label="Kategoriler"></div>
+      <div id="channels" class="grid"></div>
+      <p id="empty" class="empty" hidden>Kanal bulunamadı.</p>
+    </section>
+  </main>
+
+  <footer>
+    Kaynaklar her saat otomatik taranır.
+    <a href="https://raw.githubusercontent.com/ailantus/tvlistesi/refs/heads/main/data/playlist.m3u" target="_blank" rel="noopener">M3U listesini aç</a>
+    · Yayın adresleri herkese açık kaynaklardan gelir; içerik sahiplerinin hakları saklıdır.
+  </footer>
+
+  <script src="data/channels.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
