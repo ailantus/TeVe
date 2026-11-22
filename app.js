@@ -3,7 +3,7 @@
 
   const REFRESH_MS = 30 * 60 * 1000;
   const FAV_KEY = "tvlistesi.favorites";
-  const REMOTE_JSON = "https://raw.githubusercontent.com/ailantus/tvlistesi/refs/heads/main/data/channels.json";
+  const REMOTE_JSON = "https://raw.githubusercontent.com/ailantus/TeVe/refs/heads/main/data/channels.json";
 
   const el = {
     meta: document.getElementById("meta"),

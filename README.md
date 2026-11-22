@@ -1,6 +1,6 @@
 # tvlistesi — Türk ulusal kanal listesi
 
-[![Kanal listesini guncelle](https://github.com/ailantus/tvlistesi/actions/workflows/update.yml/badge.svg)](https://github.com/ailantus/tvlistesi/actions/workflows/update.yml)
+[![Kanal listesini guncelle](https://github.com/ailantus/TeVe/actions/workflows/update.yml/badge.svg)](https://github.com/ailantus/TeVe/actions/workflows/update.yml)
 
 Türkiye genelinde yayın yapan ulusal kanalların **otomatik güncellenen** listesini üretir ve
 izlemek için hazır bir oynatıcı arayüzü sunar. Hiçbir video dosyası barındırmaz; yalnızca
@@ -52,7 +52,7 @@ diğer adresleri sırayla dener.
 
 ### GitHub Actions (önerilen)
 
-1. Bu klasör `ailantus/tvlistesi` deposunun kökü olacak şekilde yüklenir (içinde ayrıca
+1. Bu klasör `ailantus/TeVe` deposunun kökü olacak şekilde yüklenir (içinde ayrıca
    bir `tvlistesi/` alt klasörü **olmamalı**).
 2. `.github/workflows/update.yml` saatlik olarak listeyi yeniden üretip `data/` klasörünü
    commit eder. Eski `.github/workflows/main.yml` kaldırılmıştır; ikisi birlikte bırakılırsa
@@ -62,16 +62,16 @@ diğer adresleri sırayla dener.
 4. TV uygulamanıza playlist adresini verin:
 
    ```
-   https://raw.githubusercontent.com/ailantus/tvlistesi/refs/heads/main/data/playlist.m3u
+   https://raw.githubusercontent.com/ailantus/TeVe/refs/heads/main/data/playlist.m3u
    ```
 
    Arayüzün JSON adresi (uygulama açılışta ve 30 dakikada bir buradan yeniler):
 
    ```
-   https://raw.githubusercontent.com/ailantus/tvlistesi/refs/heads/main/data/channels.json
+   https://raw.githubusercontent.com/ailantus/TeVe/refs/heads/main/data/channels.json
    ```
 
-> Not: `https://ailantus.github.io/tvlistesi/` şu anda 404 dönüyor. Web arayüzünü
+> Not: `https://ailantus.github.io/TeVe/` şu anda 404 dönüyor. Web arayüzünü
 > tarayıcı/TV üzerinden açmak için depoda **Settings → Pages → Source: Deploy from a
 > branch → main** seçeneğini etkinleştirin. Yerel `index.html` zaten uzak JSON'dan
 > güncellenerek çalışır.
@@ -115,8 +115,8 @@ git remote add origin https://github.com/<KULLANICI>/<DEPO>.git
 git push -u origin main
 ```
 
-Depo adı `ailantus/tvlistesi` dışında bir şeyse `app.js` ve `README.md` içindeki
-`raw.githubusercontent.com/ailantus/tvlistesi/...` adreslerini yeni depo adına göre
+Depo adı `ailantus/TeVe` dışında bir şeyse `app.js` ve `README.md` içindeki
+`raw.githubusercontent.com/ailantus/TeVe/...` adreslerini yeni depo adına göre
 değiştirin. `git push` kimlik bilgisi isterse GitHub Personal Access Token (repo
 yetkisi) veya GitHub CLI (`gh auth login`) kullanın.
 
