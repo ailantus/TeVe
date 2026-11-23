@@ -1,7 +1,7 @@
 window.TVLISTESI_DATA = {
   "name": "Türk Ulusal Kanallar",
   "description": "Türkiye genelinde yayın yapan ulusal kanalların otomatik güncellenen listesi",
-  "generated_at": "2026-11-22T18:32:01+00:00",
+  "generated_at": "2026-11-23T00:19:26+00:00",
   "sources": [
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u"
