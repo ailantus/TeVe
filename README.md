@@ -37,12 +37,6 @@ tvlistesi/
 
 ## Hızlı başlangıç
 
-```powershell
-cd "C:\Users\Ahmet\Documents\Varsayılan Proje\tvlistesi"
-python generate.py
-start index.html
-```
-
 Arayüzde kanal seçip izleyebilir, arama yapabilir, favori ekleyebilir ve kategori
 filtreleyebilirsiniz. TV kutusunda ok tuşları ile kanallar arasında gezinebilir,
 `Enter`/`OK` ile açabilirsiniz. Bir yayın açılmazsa **Yedek kaynağı dene** düğmesi
