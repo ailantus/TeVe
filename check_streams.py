@@ -5,9 +5,7 @@ from __future__ import annotations
 
 import json
 import os
-import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
@@ -196,32 +194,7 @@ def main() -> int:
         with open(CONFIG_PATH, "w", encoding="utf-8", newline="\n") as f:
             json.dump(config, f, ensure_ascii=False, indent=2)
             f.write("\n")
-        log("config.json güncellendi")
-
-    if changed_data or changed_config:
-        data["generated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        with open(data_path, "w", encoding="utf-8", newline="\n") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-            f.write("\n")
-        js_path = os.path.join(DATA_DIR, "channels.js")
-        with open(js_path, "w", encoding="utf-8", newline="\n") as f:
-            f.write("window.TVLISTESI_DATA = ")
-            json.dump(data, f, ensure_ascii=False, indent=2)
-            f.write(";\n")
-        # update playlist too
-        m3u = ["#EXTM3U"]
-        for ch in data.get("channels", []):
-            logo = ch.get("logo", "")
-            logo_attr = f' tvg-logo="{logo}"' if logo else ""
-            m3u.append(f'#EXTINF:-1 tvg-id="{ch["id"]}"{logo_attr} group-title="{ch.get("group","Ulusal")}",{ch["name"]}')
-            ref = (ch.get("headers") or {}).get("Referer")
-            if ref:
-                m3u.append(f"#EXTVLCOPT:http-referrer={ref}")
-            m3u.append(ch["url"])
-        m3u.append("")
-        with open(os.path.join(DATA_DIR, "playlist.m3u"), "w", encoding="utf-8", newline="\n") as f:
-            f.write("\n".join(m3u))
-        log("data dosyaları güncellendi")
+        log("config.json güncellendi; liste yeniden üretilmeli.")
     else:
         log("Değişiklik yok.")
 

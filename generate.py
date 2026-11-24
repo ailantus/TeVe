@@ -218,6 +218,20 @@ def main() -> int:
         "channels": channels,
     }
 
+    # Aynı liste yeniden üretildiğinde zaman damgasını değiştirme; aksi halde
+    # zamanlanmış iş her 12 saatte bir gereksiz commit oluşturur.
+    channels_json = os.path.join(DATA_DIR, "channels.json")
+    if os.path.exists(channels_json):
+        try:
+            with open(channels_json, encoding="utf-8") as handle:
+                previous = json.load(handle)
+            current_content = {k: v for k, v in data.items() if k != "generated_at"}
+            previous_content = {k: v for k, v in previous.items() if k != "generated_at"}
+            if current_content == previous_content:
+                data["generated_at"] = previous.get("generated_at", data["generated_at"])
+        except (OSError, ValueError):
+            pass
+
     os.makedirs(DATA_DIR, exist_ok=True)
 
     m3u = ["#EXTM3U"]
