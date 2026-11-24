@@ -1,0 +1,42 @@
+name: Yayınları kontrol et
+
+on:
+  schedule:
+    - cron: "23 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: playlist-maintenance
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Yayınları test et ve yedeklere geç
+        run: python check_streams.py
+
+      - name: Listeyi üret
+        run: python generate.py
+
+      - name: Değişiklikleri kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config.json data
+          if [ -n "$(git diff --cached --name-only)" ]; then
+            git commit -m "Yayın kontrolü: bozuk linkler güncellendi"
+            git pull --rebase origin main
+            git push
+          else
+            echo "Değişiklik yok."
+          fi
