@@ -136,7 +136,8 @@
       name.textContent = channel.name;
       const group = document.createElement("span");
       group.className = "channel-group";
-      group.textContent = channel.group + (channel.origin === "fallback" ? " · yedek adres" : "");
+      const originNote = channel.origin === "fallback" ? " · yedek adres" : channel.origin === "pinned" ? " · sabit adres" : "";
+      group.textContent = channel.group + originNote;
       info.append(name, group);
       card.appendChild(info);
 

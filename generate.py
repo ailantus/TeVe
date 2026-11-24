@@ -142,6 +142,11 @@ def select_url(channel: dict, by_id: dict, by_name: dict) -> tuple[str, str, lis
                 unique.append(item)
                 seen_urls.add(item["url"])
 
+    pinned = channel.get("pinned")
+    if pinned:
+        alternates = [item["url"] for item in unique if item["url"] != pinned][:3]
+        return pinned, "pinned", alternates
+
     fallback = channel.get("fallback")
     if fallback:
         unique.append({
@@ -186,7 +191,7 @@ def main() -> int:
         url, origin, alternates = select_url(channel, by_id, by_name)
         if not url:
             continue
-        if origin == "fallback":
+        if origin in ("fallback", "pinned"):
             fallback_count += 1
         logo = channel.get("logo")
         channels.append({
@@ -235,7 +240,7 @@ def main() -> int:
         json.dump(data, handle, ensure_ascii=False, indent=2)
         handle.write(";\n")
 
-    log(f"Tamam: {len(channels)} kanal yazıldı ({fallback_count} yedek adres).")
+    log(f"Tamam: {len(channels)} kanal yazıldı ({fallback_count} sabit/yedek adres).")
     log(f"Klasör: {DATA_DIR}")
     return 0
 
