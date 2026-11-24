@@ -1,7 +1,7 @@
 {
   "name": "Türk Ulusal Kanallar",
   "description": "Türkiye genelinde yayın yapan ulusal kanalların otomatik güncellenen listesi",
-  "generated_at": "2026-11-24T15:08:11+00:00",
+  "generated_at": "2026-11-24T15:34:03+00:00",
   "sources": [
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u"
@@ -27,7 +27,10 @@
         "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8"
       ],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/ATV.tr.png",
-      "origin": "pinned"
+      "origin": "pinned",
+      "headers": {
+        "Referer": "https://www.atv.com.tr/"
+      }
     },
     {
       "id": "BeyazTV.tr",
