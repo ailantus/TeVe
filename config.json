@@ -17,7 +17,7 @@
   "channels": [
     { "id": "TRT1.tr", "name": "TRT 1", "group": "Ulusal", "logo": "TRT1.tr.png", "fallback": "https://tv-trt1.medya.trt.com.tr/master.m3u8" },
     { "id": "TRT2.tr", "name": "TRT 2", "group": "Ulusal", "logo": "TRT2.tr.png", "fallback": "https://tv-trt2.medya.trt.com.tr/master.m3u8" },
-    { "id": "ATV.tr", "name": "ATV", "group": "Ulusal", "logo": "ATV.tr.png", "pinned": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8", "fallback": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8" },
+    { "id": "ATV.tr", "name": "ATV", "group": "Ulusal", "logo": "ATV.tr.png", "pinned": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8", "fallback": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8", "headers": { "Referer": "https://www.atv.com.tr/" } },
     { "id": "KanalD.tr", "name": "Kanal D", "group": "Ulusal", "logo": "KanalD.tr.png", "fallback": "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3" },
     { "id": "StarTV.tr", "name": "Star TV", "group": "Ulusal", "logo": "StarTV.tr.png", "fallback": "https://dogus-live.daioncdn.net/startv/startv.m3u8" },
     { "id": "ShowTV.tr", "name": "Show TV", "group": "Ulusal", "logo": "ShowTV.tr.png", "pinned": "https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558", "fallback": "https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558" },

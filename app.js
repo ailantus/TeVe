@@ -202,7 +202,12 @@
     setStatus(`Bağlanıyor… (kaynak ${state.index + 1}/${state.urls.length})`);
 
     if (typeof Hls !== "undefined" && Hls.isSupported() && /\.m3u8(\?|$)/i.test(url)) {
-      hls = new Hls({ enableWorker: true, lowLatencyMode: true, maxBufferLength: 20 });
+      hls = new Hls({
+        enableWorker: true,
+        lowLatencyMode: true,
+        maxBufferLength: 20,
+        httpHeaders: state.current && state.current.headers ? state.current.headers : undefined,
+      });
       hls.loadSource(url);
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED, function () {

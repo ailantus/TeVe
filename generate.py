@@ -203,6 +203,8 @@ def main() -> int:
             "logo": f"{config['logoBase']}{logo}" if logo else "",
             "origin": origin,
         })
+        if channel.get("headers"):
+            channels[-1]["headers"] = channel["headers"]
 
     group_order = {name: index for index, name in enumerate(config.get("groups", []))}
     channels.sort(key=lambda item: (group_order.get(item["group"], 99), item["name"].casefold()))
@@ -225,6 +227,9 @@ def main() -> int:
             f'#EXTINF:-1 tvg-id="{channel["id"]}"{logo_attr} '
             f'group-title="{channel["group"]}",{channel["name"]}'
         )
+        referer = channel.get("headers", {}).get("Referer")
+        if referer:
+            m3u.append(f"#EXTVLCOPT:http-referrer={referer}")
         m3u.append(channel["url"])
     m3u.append("")
 
