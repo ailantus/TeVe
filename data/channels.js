@@ -1,12 +1,12 @@
 window.TVLISTESI_DATA = {
   "name": "Türk Ulusal Kanallar",
   "description": "Türkiye genelinde yayın yapan ulusal kanalların otomatik güncellenen listesi",
-  "generated_at": "2026-11-24T06:04:37+00:00",
+  "generated_at": "2026-11-24T15:17:05+00:00",
   "sources": [
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u"
   ],
-  "count": 44,
+  "count": 40,
   "channels": [
     {
       "id": "360.tr",
@@ -21,12 +21,13 @@ window.TVLISTESI_DATA = {
       "id": "ATV.tr",
       "name": "ATV",
       "group": "Ulusal",
-      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
+      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8",
       "alternates": [
+        "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
         "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8"
       ],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/ATV.tr.png",
-      "origin": "canlı kaynak"
+      "origin": "pinned"
     },
     {
       "id": "BeyazTV.tr",
@@ -43,13 +44,12 @@ window.TVLISTESI_DATA = {
       "id": "Kanal7.tr",
       "name": "Kanal 7",
       "group": "Ulusal",
-      "url": "https://kanal7.blutv.com/blutv_kanal7_live/live.m3u8",
+      "url": "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8",
       "alternates": [
-        "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8",
-        "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8"
+        "https://kanal7.blutv.com/blutv_kanal7_live/live.m3u8"
       ],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/Kanal7.tr.png",
-      "origin": "canlı kaynak"
+      "origin": "pinned"
     },
     {
       "id": "KanalD.tr",
@@ -64,13 +64,12 @@ window.TVLISTESI_DATA = {
       "id": "NOW.tr",
       "name": "NOW",
       "group": "Ulusal",
-      "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8",
+      "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
       "alternates": [
-        "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
-        "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8"
+        "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8"
       ],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/NOWTV.tr.png",
-      "origin": "canlı kaynak"
+      "origin": "pinned"
     },
     {
       "id": "NTV.tr",
@@ -87,10 +86,10 @@ window.TVLISTESI_DATA = {
       "id": "ShowTV.tr",
       "name": "Show TV",
       "group": "Ulusal",
-      "url": "https://ciner-live.daioncdn.net/showtv/showtv.m3u8",
+      "url": "https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558",
       "alternates": [],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/ShowTV.tr.png",
-      "origin": "fallback"
+      "origin": "pinned"
     },
     {
       "id": "StarTV.tr",
@@ -107,10 +106,10 @@ window.TVLISTESI_DATA = {
       "id": "Teve2.tr",
       "name": "Teve2",
       "group": "Ulusal",
-      "url": "https://demiroren-live.daioncdn.net/teve2/teve2.m3u8",
+      "url": "https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd",
       "alternates": [],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/Teve2.tr.png",
-      "origin": "fallback"
+      "origin": "pinned"
     },
     {
       "id": "TRT1.tr",
@@ -166,14 +165,14 @@ window.TVLISTESI_DATA = {
       "id": "BloombergHT.tr",
       "name": "Bloomberg HT",
       "group": "Haber",
-      "url": "https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8",
+      "url": "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8?app=web",
       "alternates": [
         "https://mumbai-edge.smartplaytv.in/BloombergHT/index.m3u8",
-        "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8",
-        "http://193.123.61.120:3000/kanal/bloomberght"
+        "http://193.123.61.120:3000/kanal/bloomberght",
+        "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8"
       ],
       "logo": "",
-      "origin": "canlı kaynak"
+      "origin": "pinned"
     },
     {
       "id": "CNNTurk.tr",
@@ -197,12 +196,12 @@ window.TVLISTESI_DATA = {
       "id": "HaberturkTV.tr",
       "name": "Habertürk TV",
       "group": "Haber",
-      "url": "https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8",
+      "url": "https://ciner.daioncdn.net/haberturktv/haberturktv.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3&ppid=64e56cb1a299c3128b00b1ae198ab428",
       "alternates": [
         "https://tv.ensonhaber.com/haberturk/haberturk.m3u8"
       ],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/HaberturkTV.tr.png",
-      "origin": "fallback"
+      "origin": "pinned"
     },
     {
       "id": "HalkTV.tr",
@@ -232,24 +231,16 @@ window.TVLISTESI_DATA = {
       "origin": "canlı kaynak"
     },
     {
-      "id": "Tele1.tr",
-      "name": "Tele 1",
-      "group": "Haber",
-      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
-      "alternates": [],
-      "logo": "",
-      "origin": "canlı kaynak"
-    },
-    {
       "id": "TGRTHaber.tr",
       "name": "TGRT Haber",
       "group": "Haber",
-      "url": "https://canli.tgrthaber.com/tgrt.m3u8",
+      "url": "https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber.m3u8",
       "alternates": [
+        "https://canli.tgrthaber.com/tgrt.m3u8",
         "https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8"
       ],
       "logo": "",
-      "origin": "canlı kaynak"
+      "origin": "pinned"
     },
     {
       "id": "TRTHaber.tr",
@@ -259,15 +250,6 @@ window.TVLISTESI_DATA = {
       "alternates": [],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/TRTHaber.tr.png",
       "origin": "canlı kaynak"
-    },
-    {
-      "id": "TV100.tr",
-      "name": "TV 100",
-      "group": "Haber",
-      "url": "https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8",
-      "alternates": [],
-      "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/TV100.tr.png",
-      "origin": "fallback"
     },
     {
       "id": "ASpor.tr",
@@ -288,33 +270,15 @@ window.TVLISTESI_DATA = {
       "origin": "canlı kaynak"
     },
     {
-      "id": "SportsTV.tr",
-      "name": "Sports TV",
-      "group": "Spor",
-      "url": "https://live.sportstv.com.tr/hls/low/sportstv.m3u8",
-      "alternates": [],
-      "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/SportsTV.tr.png",
-      "origin": "fallback"
-    },
-    {
-      "id": "TRT3.tr",
-      "name": "TRT 3",
-      "group": "Spor",
-      "url": "https://tv-trt3.live.trt.com.tr/master.m3u8",
-      "alternates": [
-        "https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F418740351278f04c94b243"
-      ],
-      "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/TRT3.tr.png",
-      "origin": "canlı kaynak"
-    },
-    {
       "id": "TRTSpor.tr",
       "name": "TRT Spor",
       "group": "Spor",
-      "url": "https://corestream.siteyaptim.live/trt-spor/index.m3u8",
-      "alternates": [],
+      "url": "https://tv-trtspor1.medya.trt.com.tr/master.m3u8",
+      "alternates": [
+        "https://corestream.siteyaptim.live/trt-spor/index.m3u8"
+      ],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/TRTSpor.tr.png",
-      "origin": "canlı kaynak"
+      "origin": "pinned"
     },
     {
       "id": "TRTSporYildiz.tr",
@@ -414,13 +378,12 @@ window.TVLISTESI_DATA = {
       "id": "TRTMuzik.tr",
       "name": "TRT Müzik",
       "group": "Kültür & Belgesel",
-      "url": "https://stream8.cinerama.uz/1208/tracks-v1a1/mono.m3u8",
+      "url": "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8",
       "alternates": [
-        "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8",
-        "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8"
+        "https://stream8.cinerama.uz/1208/tracks-v1a1/mono.m3u8"
       ],
       "logo": "",
-      "origin": "canlı kaynak"
+      "origin": "pinned"
     },
     {
       "id": "TRTTurk.tr",
