@@ -1,7 +1,7 @@
 {
   "name": "Türk Ulusal Kanallar",
   "description": "Türkiye genelinde yayın yapan ulusal kanalların otomatik güncellenen listesi",
-  "generated_at": "2026-11-24T15:55:31+00:00",
+  "generated_at": "2026-11-25T02:31:01+00:00",
   "sources": [
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u"
@@ -393,7 +393,9 @@
       "name": "TRT Türk",
       "group": "Kültür & Belgesel",
       "url": "https://tv-trtturk.medya.trt.com.tr/master.m3u8",
-      "alternates": [],
+      "alternates": [
+        "https://r.eu.cdn-redge.media/livehls/oeu/mt/live/trt_turk/live.livx/playlist.m3u8"
+      ],
       "logo": "https://raw.githubusercontent.com/ghokun/tv/main/bin/logo/TRTTurk.tr.png",
       "origin": "canlı kaynak"
     },
