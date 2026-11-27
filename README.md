@@ -26,7 +26,9 @@ herkese açık yayın adreslerini derler.
 
 `data/power-sinema.m3u`, kaynaktaki film adlarının tür ve oyuncu fazlalıklarından
 arındırılıp **`Film Adı (Yıl)`** biçimine getirilmiş ve IMDb tür verisiyle
-sınıflandırılmış 9.342 filmlik listedir (yıllar da IMDb’den tamamlanmıştır).
+sınıflandırılmış 9.342 filmlik listedir. Yıllar IMDb’den tamamlanmış, film
+adlarında IMDb’nin Türkiye başlıkları kullanılmıştır (TR başlığı olmayanlar
+kaynaktaki adla kalır).
 Oynatıcıda doğrudan şu adresle açılabilir:
 
 ```
