@@ -22,12 +22,29 @@ herkese açık yayın adreslerini derler.
    | `data/channels.json` | JSON API (oynatıcı arayüzü bunu 30 dakikada bir yeniden okur) |
    | `data/channels.js` | `file://` ile açıldığında da çalışan gömülü veri |
 
+## Film listesi
+
+`data/power-sinema.m3u`, kaynaktaki film adlarının tür ve oyuncu fazlalıklarından
+arındırılıp **`Film Adı (Yıl)`** biçimine getirilmiş ve IMDb tür verisiyle
+sınıflandırılmış 9.342 filmlik listedir (yıllar da IMDb’den tamamlanmıştır).
+Oynatıcıda doğrudan şu adresle açılabilir:
+
+```
+https://raw.githubusercontent.com/ailantus/TeVe/main/data/power-sinema.m3u
+```
+
+Türler `group-title` alanındadır: Aksiyon, Animasyon, Belgesel, Dram, Fantastik,
+Gerilim, Gizem, Komedi, Korku, Macera, Müzik, Romantik, Savaş, Suç, Western, Aile,
+Bilim Kurgu ve Diğer. Bu dosya saatlik kanal güncellemesinden etkilenmez.
+
 ## Depo yapısı
 
 ```
 tvlistesi/
 ├── .github/workflows/update.yml   # saatlik otomatik güncelleme
 ├── data/                          # üretilen liste dosyaları (repo'ya dahil)
+│   ├── playlist.m3u               # ulusal kanallar
+│   └── power-sinema.m3u           # türlere göre sınıflandırılmış film listesi
 ├── config.json                    # kanal tanımları
 ├── generate.py                    # liste üretici (bağımlılık yok, Python 3)
 ├── index.html / style.css / app.js# izleme arayüzü
